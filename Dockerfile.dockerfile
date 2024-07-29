@@ -6,4 +6,4 @@ WORKDIR /yannqing/demo2/java
 VOLUME /yannqing/demo2/logs
 COPY ./target/demo2-0.0.1-SNAPSHOT.jar /tmp/app.jar
 EXPOSE 8080
-CMD ["java", "-jar", "/tmp/app.jar", ">/yannqing/demo2/logs/output.log"]
+CMD ["java", "-jar", "/tmp/app.jar", ">", "/yannqing/demo2/logs/output.log"]
